@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>image src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-1a28-622f-9bfc-53385bfc0fe2/raw?se=2025-08-20T11%3A20%3A46Z&sp=r&sv=2024-08-04&sr=b&scid=8afbdce0-fa88-5af3-a82c-aa3076c22c78&skoid=f28c0102-4d9d-4950-baf0-4a8e5f6cf9d4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-19T21%3A57%3A24Z&ske=2025-08-20T21%3A57%3A24Z&sks=b&skv=2024-08-04&sig=%2BHWDJ9ZULe73RmZ/ynQrLzRkUbWSfYSQLhADMIdzDoo%3D"UKAY Rubber Moulders | Rubber Moulding • Polyurethane • Engineering & Welding</title>
+  <meta name="description" content="UKAY Rubber Moulders – specialists in rubber moulded products, 100% polyurethane bushes, seals & sheets, advanced welding, and engineering in Alberton, South Africa." />
+  <meta property="og:title" content="UKAY Rubber Moulders" />
+  <meta property="og:description" content="Rubber moulded products, polyurethane components, advanced welding, CNC machining & fabrication." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Fonts & Tailwind (Play CDN for simplicity) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#22d3ee', // cyan-400 accent
+            dark: '#0b132b',
+            dim: '#1b263b',
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(2, 6, 23, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    /* Hero background overlay */
+    .hero:before {
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 20% 20%, rgba(34,211,238,.15), transparent 50%),
+                  linear-gradient(to bottom, rgba(2,6,23,.55), rgba(2,6,23,.85));
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <!-- NAVBAR -->
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-slate-900/60 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+        <a href="#home" class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-2xl bg-primary/20 grid place-items-center">
+            <div class="w-3.5 h-3.5 rounded-full bg-primary"></div>
+          </div>
+          <span class="text-lg font-extrabold tracking-tight">UKAY RUBBER MOULDERS</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#services" class="hover:text-primary">Services</a>
+          <a href="#about" class="hover:text-primary">About</a>
+          <a href="#gallery" class="hover:text-primary">Gallery</a>
+          <a href="#contact" class="hover:text-primary">Contact</a>
+          <a href="#contact" class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-2xl hover:bg-primary/20 transition">Get in touch</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-white/10" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-slate-900/80 backdrop-blur">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-4 text-sm">
+        <a href="#services" class="hover:text-primary" onclick="toggleMenu()">Services</a>
+        <a href="#about" class="hover:text-primary" onclick="toggleMenu()">About</a>
+        <a href="#gallery" class="hover:text-primary" onclick="toggleMenu()">Gallery</a>
+        <a href="#contact" class="hover:text-primary" onclick="toggleMenu()">Contact</a>
+        <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-2xl hover:bg-primary/20 transition" onclick="toggleMenu()">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero relative min-h-[88vh] flex items-center pt-24 overflow-hidden">
+    <img src="https://source.unsplash.com/jcm9Qo8O7kw/1920x1080" alt="Welding sparks in industrial environment" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-primary font-semibold tracking-widest uppercase">Rubber • Polyurethane • Engineering</p>
+        <h1 class="mt-3 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+          Precision Rubber Moulding & <span class="text-primary">Polyurethane</span> Components
+        </h1>
+        <p class="mt-5 text-slate-300 text-lg">We manufacture 100% polyurethane suspension bushes, seals and sheets; deliver rubber moulded products in multiple compounds (including Viton & silicone); and provide advanced welding, CNC machining and fabrication.</p>
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="#services" class="px-6 py-3 rounded-2xl bg-primary text-black font-semibold hover:opacity-90 transition shadow-soft">Explore Services</a>
+          <a href="#contact" class="px-6 py-3 rounded-2xl border border-white/20 hover:border-primary hover:text-primary transition">Request a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS / TRUST -->
+  <section class="bg-slate-900/60 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-white/5 text-center">
+        <div class="text-3xl font-extrabold">20+ yrs</div>
+        <div class="text-sm text-slate-400">Industry experience</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-white/5 text-center">
+        <div class="text-3xl font-extrabold">Toolroom</div>
+        <div class="text-sm text-slate-400">In‑house mould engineering</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-white/5 text-center">
+        <div class="text-3xl font-extrabold">Polyurethane</div>
+        <div class="text-sm text-slate-400">100% bushes, seals, sheets</div>
+      </div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-white/5 text-center">
+        <div class="text-3xl font-extrabold">Fabrication</div>
+        <div class="text-sm text-slate-400">Mild steel • Aluminium • Stainless</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Services</h2>
+        <p class="mt-3 text-slate-300">From high‑performance polymers to precision metalwork, we deliver end‑to‑end components and assemblies.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <!-- Polyurethane Products -->
+        <article class="group rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/60 to-slate-900/30 overflow-hidden">
+          <div class="relative h-44">
+            <img src="https://www.dataroll.co.uk/media/bushins.png" alt="Polymer and tooling texture" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Polyurethane Products</h3>
+            <p class="mt-2 text-sm text-slate-300">We manufacture a wide range of polyurethane suspension bushes, seals and sheets. All products are <strong>100% polyurethane</strong>.</p>
+          </div>
+        </article>
+
+        <!-- Rubber Moulded Products -->
+        <article class="group rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/60 to-slate-900/30 overflow-hidden">
+          <div class="relative h-44">
+            <img src="https://cliftonrubber.com/wp-content/uploads/2023/03/Rubber-Products-587x440-1.jpg" alt="Industrial tooling and components" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Rubber Moulded Products</h3>
+            <p class="mt-2 text-sm text-slate-300">Various compounds available including <strong>Viton</strong> and <strong>silicone</strong>, at competitive rates. In‑house tool‑room service with <strong>20 years</strong> of rubber industry experience.</p>
+          </div>
+        </article>
+
+        <!-- Engineering & Advanced Welding -->
+        <article class="group rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/60 to-slate-900/30 overflow-hidden">
+          <div class="relative h-44">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.Dgx-z3E2-PamHWnTYcwFLgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Advanced welding" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Engineering & Advanced Welding</h3>
+            <p class="mt-2 text-sm text-slate-300">We engineer our own rubber moulds with qualified technicians, and specialize in fabrication across mild steel, aluminium and stainless steel.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16 bg-slate-900/50 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Who We Are</h2>
+        <p class="mt-4 text-slate-300">We operate in the rubber engineering sector, covering rubber moulding, polyurethane components, advanced welding and CNC machining. We manufacture specialised gaskets, PTFE sheets and components, and provide an in‑house toolroom for end‑to‑end projects.</p>
+        <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
+          <div class="p-4 rounded-2xl bg-slate-900/70 border border-white/10">Family‑run business</div>
+          <div class="p-4 rounded-2xl bg-slate-900/70 border border-white/10">Customer‑first approach</div>
+          <div class="p-4 rounded-2xl bg-slate-900/70 border border-white/10">Advice for rubber & PU queries</div>
+          <div class="p-4 rounded-2xl bg-slate-900/70 border border-white/10">Full project lifecycle</div>
+        </div>
+      </div>
+      <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-soft">
+        <img src="https://lirp.cdn-website.com/650fb7d5/dms3rep/multi/opt/gal-4-1400x927-1920w.jpg" alt="Precision welding close‑up" class="w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Workshop & Fabrication</h2>
+        <p class="mt-3 text-slate-300">A snapshot of the processes and environments behind our components and assemblies.</p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img class="rounded-2xl border border-white/10 object-cover w-full h-44" src="https://static8.depositphotos.com/1004739/1060/i/450/depositphotos_10609525-stock-photo-grinding.jpg" alt="Grinding sparks"/>
+        <img class="rounded-2xl border border-white/10 object-cover w-full h-44" src="https://source.unsplash.com/9sJMyPKlKhw/800x600" alt="Welding in workshop"/>
+        <img class="rounded-2xl border border-white/10 object-cover w-full h-44" src="https://source.unsplash.com/qFlG82xKuw8/800x600" alt="Operating CNC"/>
+        <img class="rounded-2xl border border-white/10 object-cover w-full h-44" src="https://source.unsplash.com/alHkQu3QDbo/800x600" alt="Modern CNC lathe"/>
+        <img class="rounded-2xl border border-white/10 object-cover w-full h-44" src="https://tse3.mm.bing.net/th/id/OIP.NnNFMStm0tpEbj3E5rZyfgHaFj?pid=ImgDet&w=474&h=355&rs=1&o=7&rm=3" alt="TIG welding"/>
+        <img class="rounded-2xl border border-white/10 object-cover w-full h-44" src="https://source.unsplash.com/qcbIqgSY6Io/800x600" alt="Industrial tools"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-slate-900/60 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Contact</h2>
+        <p class="mt-3 text-slate-300">We’re based in Alberton and serve clients across South Africa.</p>
+
+        <div class="mt-6 space-y-3 text-slate-200 text-sm">
+          <p><span class="text-slate-400">Address:</span> No. 4 Tarry Road, Alrode South, Alberton</p>
+          <p><span class="text-slate-400">Telephone:</span> 011 868 3714 &nbsp; • &nbsp; <span class="text-slate-400">Fax:</span> 011 900 2426</p>
+          <p><span class="text-slate-400">Richard:</span> 084 857 4584 &nbsp; • &nbsp; <span class="text-slate-400">Shaun:</span> 083 530 2918</p>
+          
+          <p><a class="text-primary hover:underline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=No+4+Tarry+Road,+Alrode+South,+Alberton">Open in Google Maps</a></p>
+        </div>
+      </div>
+
+      <!-- Simple mailto form (no backend required) -->
+      <form class="rounded-3xl border border-white/10 bg-slate-900/60 p-6 space-y-4" action="mailto:[email protected]" method="post" enctype="text/plain">
+        <div>
+          <label class="block text-sm text-slate-400 mb-1">Name</label>
+          <input required type="text" name="Name" class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Your name" />
+        </div>
+        <div>
+          <label class="block text-sm text-slate-400 mb-1">Email</label>
+          <input required type="email" name="Email" class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="you@example.com" />
+        </div>
+        <div>
+          <label class="block text-sm text-slate-400 mb-1">Message</label>
+          <textarea required name="Message" rows="5" class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Tell us what you need…"></textarea>
+        </div>
+        <button class="w-full px-6 py-3 rounded-2xl bg-primary text-black font-semibold hover:opacity-90 transition shadow-soft">Send</button>
+        <p class="text-xs text-slate-400">Submitting opens your email client to send the message.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-slate-400 border-t border-white/5">
+    <p>© <span id="year"></span> UKAY Rubber Moulders. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu(){
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+    document.getElementById('menuBtn').addEventListener('click', toggleMenu);
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
